@@ -65,15 +65,7 @@ public class variables{
         double quad_solution = a_x_square+b_x_value+c_value;
         return quad_solution;
 
-
-
-        
-    
-  
-   
-   
-        
-
     }
+    
 }
 
