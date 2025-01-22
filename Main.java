@@ -41,7 +41,19 @@ public class Main {
 
      String final_word=arrayNumbers.randamWord(words);
      System.out.println(final_word);
+     //String[] words = arrayNumbers.arrayNames();
+       // System.out.println("Words array: " + String.join(", ", words));
 
+        //String finalWord = arrayNumbers.randamWord(words);
+        //System.out.println("Final random word: " + finalWord);
+
+
+       boolean is_present = arrayNumbers.is_sundeep(final_word);
+       System.out.println(is_present);
+
+       int char_count = arrayNumbers.letter_count(final_word);
+       System.out.println("the no of letters in random word is ;"+char_count);
+       
 
 
      
