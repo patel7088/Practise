@@ -1,3 +1,9 @@
+import User.UserRepository;
+import User.User;
+import User.UserService;
+
+
+
 
 
 public class Main {
@@ -52,18 +58,44 @@ public class Main {
        System.out.println(is_present);
 
        int char_count = arrayNumbers.letter_count(final_word);
-       System.out.println("the no of letters in random word is ;"+char_count);
+       System.out.println("the no of letters in random word is : "+char_count);
+
+
+        //-----------------------------------"From here"-----------------------------------------------------------
+        //userManager Usermanager = new userManager();
+        //User user1 = new User("rama12", "ramu");
+        //User user2 = new User("navin12", "navin");
+
+        //Usermanager.addUser(user1);
+        //Usermanager.addUser(user2);
+        //User foundUser = Usermanager.findUserByName("navin");
+
+        //if (foundUser != null) {
+        //  System.out.println("User found: " + foundUser.getUser_name());
+        //} else {
+        //  System.out.println("User not found");
+        //}
+
+User user1 = new User(123, "nanda", "xyz@gmail.com");
+System.out.println(user1);
+User user2 = new User(124, "navin", "nbn@gmail.com");
+System.out.println(user2);
+UserRepository userRepository = new UserRepository();
+
        
+       
+       userRepository.initializeDatabase();
 
-
-     
 
       
+       User user = userRepository.findById(13);
+       System.out.println(user.getUser_id()+ " "+ user.getUser_name()+ " "+user.getUser_email());
 
+       UserService userService = new UserService(); 
 
-    
-     
+       User user4 = userService.getUserById(12); 
+       System.out.println(user4);
+       System.out.println(user4.getUser_id()+ " "+ user4.getUser_name()+ " "+user4.getUser_email());
+ }
 
-    }
-    
 }

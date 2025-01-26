@@ -33,7 +33,7 @@ public class arrayNumbers {
      }
      public static boolean is_sundeep(String word) 
      {
-      if (word == "sundeep") { // Checks if the references are the same
+      if (word == "sundeep") { 
           return true;
       } else {
           return false;
@@ -44,4 +44,6 @@ public class arrayNumbers {
       public static int letter_count(String word_count){
          return word_count.length();
       }
+
+      
 }
